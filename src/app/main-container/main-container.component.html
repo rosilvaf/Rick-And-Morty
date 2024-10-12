@@ -2,7 +2,7 @@
     @defer(when store.characters().length){
         @for(character of store.characters(); track character.id){
             @defer(on viewport){
-                {{character.name}}
+                <app-character-card [character]="character"></app-character-card>
             }@placeholder {
                 <div class="placerholder">Loading</div>
             }

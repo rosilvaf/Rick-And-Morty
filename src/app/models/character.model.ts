@@ -4,7 +4,7 @@ export interface Character{
     status: string,
     species: string,
     type: string,
-    gerder: Gender,
+    gender: Gender,
     origin: Origin,
     location: Location,
     image: string, 
@@ -36,4 +36,25 @@ export interface Location extends   LinkElement{
 }
 export interface Info extends   LinkElement{
 
+}
+
+export const EmptyCharacter: Character = {
+    id: 0,
+    name: '',
+    status: '',
+    species: '',
+    type: '',
+    gender: Gender.MALE,
+    origin:  {
+        name: '',
+        link: ''
+    },
+    location:  {
+        name: '',
+        link: ''
+    },
+    image: '', 
+    episode: [],
+    url: '',
+    created: ''
 }

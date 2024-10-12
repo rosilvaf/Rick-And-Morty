@@ -6,7 +6,7 @@ import { lastValueFrom } from "rxjs";
 import {withEntities} from "@ngrx/signals/entities"
 
 type StoreState = {
-    characters: Character[]
+    characters: Character[];
 }
 
 const initialState: StoreState = {
